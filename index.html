@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explora El Salvador: lugares, cultura y experiencias para descubrir.">
+  <title>Explora SV | Descubre El Salvador</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 1. IDENTIDAD / LOGO -->
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Explora SV, inicio">
+      <span class="brand-mark" aria-hidden="true">E</span>
+      <span class="brand-name">EXPLORA<span>SV</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- 2. NAVBAR -->
+    <nav class="nav" id="siteNav" aria-label="Navegación principal">
+      <a class="nav-link active" href="#top">Inicio</a>
+      <a class="nav-link" href="#destinos">Destinos</a>
+      <a class="nav-link" href="#experiencias">Experiencias</a>
+      <a class="nav-link" href="#contacto">Contacto</a>
+      <button class="theme-button" id="themeToggle" type="button" aria-label="Cambiar tema">◐ Tema</button>
+    </nav>
+  </header>
+
+  <!-- 3. BODY / CONTENIDO PRINCIPAL -->
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-content">
+        <p class="eyebrow">Un país · muchas historias</p>
+        <h1 id="heroTitle">Tu próxima aventura<br><em>comienza aquí.</em></h1>
+        <p class="hero-copy">Descubre paisajes, sabores y rincones que hacen único a El Salvador.</p>
+        <a class="button button-light" href="#destinos">Explorar destinos <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Ilustración de montañas y sol salvadoreño">
+        <div class="sun"></div><div class="mountain mountain-back"></div><div class="mountain mountain-front"></div>
+        <div class="hero-label"><span>13° 41′ N</span><span>El Salvador</span></div>
+      </div>
+    </section>
+
+    <section class="intro section-wrap">
+      <div class="section-heading">
+        <p class="eyebrow">Hecho para descubrir</p>
+        <h2>Pequeño en tamaño.<br><em>Gigante en experiencias.</em></h2>
+      </div>
+      <p class="intro-text">Desde volcanes y playas hasta pueblos llenos de tradición, cada viaje revela una nueva forma de sentir nuestro país. Elige tu ruta y empieza a explorar.</p>
+    </section>
+
+    <section class="destinations section-wrap" id="destinos">
+      <div class="section-top">
+        <div><p class="eyebrow">01 / Lugares</p><h2>Destinos destacados</h2></div>
+        <p>Ideas para tu próxima escapada.</p>
+      </div>
+      <div class="destination-grid">
+        <article class="destination-card card-volcano">
+          <div class="card-visual visual-volcano"><span class="visual-number">01</span><span class="visual-caption">Aventura natural</span></div>
+          <div class="card-info"><div><h3>Ruta de volcanes</h3><p>Senderos, vistas y aire fresco.</p></div><span class="card-arrow">↗</span></div>
+        </article>
+        <article class="destination-card card-coast">
+          <div class="card-visual visual-coast"><span class="visual-number">02</span><span class="visual-caption">Costa salvadoreña</span></div>
+          <div class="card-info"><div><h3>Playas del Pacífico</h3><p>Atardeceres y olas para admirar.</p></div><span class="card-arrow">↗</span></div>
+        </article>
+        <article class="destination-card card-town">
+          <div class="card-visual visual-town"><span class="visual-number">03</span><span class="visual-caption">Cultura viva</span></div>
+          <div class="card-info"><div><h3>Pueblos con encanto</h3><p>Artesanía, historia y tradición.</p></div><span class="card-arrow">↗</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience" id="experiencias">
+      <div class="experience-inner section-wrap">
+        <div><p class="eyebrow">02 / Experiencias</p><h2>Una pausa para<br><em>sentir el lugar.</em></h2></div>
+        <div class="experience-detail">
+          <p>Viajar también es probar algo nuevo, conversar con la gente y mirar el paisaje sin prisa.</p>
+          <ul class="experience-list">
+            <li><span>01</span> Sabores locales <b>↗</b></li>
+            <li><span>02</span> Caminatas al aire libre <b>↗</b></li>
+            <li><span>03</span> Arte y tradiciones <b>↗</b></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-wrap" id="contacto">
+      <div class="contact-copy"><p class="eyebrow">03 / Conecta</p><h2>¿Listo para<br><em>explorar?</em></h2><p>Déjanos un mensaje y comparte qué lugar te gustaría conocer.</p></div>
+      <form class="contact-form" id="contactForm">
+        <label for="name">Tu nombre</label>
+        <input id="name" name="name" type="text" placeholder="Escribe tu nombre" required minlength="2">
+        <label for="email">Correo electrónico</label>
+        <input id="email" name="email" type="email" placeholder="nombre@correo.com" required>
+        <label for="message">¿Qué te gustaría descubrir?</label>
+        <textarea id="message" name="message" rows="3" placeholder="Cuéntanos tu idea..." required></textarea>
+        <button class="button button-dark" type="submit">Enviar mensaje <span aria-hidden="true">↗</span></button>
+        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- 4. FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-main">
+      <a class="brand brand-footer" href="#inicio"><span class="brand-mark">E</span><span class="brand-name">EXPLORA<span>SV</span></span></a>
+      <p>Conoce. Disfruta. Descubre.<br><span>El Salvador, siempre cerca.</span></p>
+      <a class="back-top" href="#inicio">Volver arriba ↑</a>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> Explora SV</span><span>Proyecto académico · Desarrollo web</span><span>Diseñado con curiosidad</span></div>
+  </footer>
+  
+  <script src="scripts/script.js"></script>
+</body>
+</html>

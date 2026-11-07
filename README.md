@@ -22,3 +22,4 @@ No uses `git add .` antes de esos commits, porque podría mezclar las cuatro par
 
 ## Personalización recomendada
 Cambia el nombre, textos, colores o destinos para que reflejen tu propia idea. Asegúrate de poder explicar cada elemento y cada función en la verificación individual.
+kk

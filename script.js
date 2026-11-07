@@ -48,3 +48,4 @@ contactForm.addEventListener('submit', (event) => {
 
 // Actualiza automáticamente el año del footer.
 year.textContent = new Date().getFullYear();
+let
